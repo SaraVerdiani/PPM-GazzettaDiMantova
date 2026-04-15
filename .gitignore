@@ -10,3 +10,5 @@
 /dataSources.local.xml
 #.idea folder
 .idea/
+# Node modules folder
+node_modules/
