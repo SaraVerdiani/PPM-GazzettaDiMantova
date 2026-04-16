@@ -8,46 +8,28 @@
 
 body {
     margin: 0;
-    font-family: "DM Sans",sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-    background-color: var(--white)
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--white);
 }
 
 .topbar {
     z-index: 1000;
 }
 
-.topbar-inner {
-    position: relative;
-    width: 100%;
-}
-
-.navbar {
-    padding: .5rem 1rem;
-}
-
-.navbar-firstrow {
-    background-color: var(--topbar-darkblue);
-}
-
-.navbar-secondrow {
-    background-color: var(--topbar-lightblue);
-}
-
 .navbar-firstrow,
 .navbar-secondrow {
     min-height: 3rem;
-    display: flex;
-    align-items: center;
+    padding: 0.5rem 1rem;
 }
+
+.navbar-firstrow { background-color: var(--topbar-darkblue); }
+.navbar-secondrow { background-color: var(--topbar-lightblue); }
 
 .navbar-firstrow a {
     color: var(--white);
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.85rem;
 }
 
 .navbar-firstrow a:hover {
@@ -56,20 +38,21 @@ body {
 
 .navbar-firstrow .btn-website {
     background-color: var(--button-yellow);
-    color: var(--black);
+    color: var(--black) !important;
     border: none;
     font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    transition: filter 0.2s;
 }
 
 .navbar-firstrow .btn-website:hover {
-    color: var(--black);
+    color: var(--black) !important;
     text-decoration: none;
 }
 
 .hamburger {
     width: 2rem;
     height: 1.5rem;
-    cursor: pointer;
 }
 
 .hamburger span {
@@ -80,19 +63,17 @@ body {
     border-radius: 2px;
 }
 
-.navbar-center a {
+.navbar-secondrow a {
     text-decoration: none;
-    font-size: 1.25rem;
     color: var(--white);
     font-weight: bold;
+}
+
+.navbar-center a {
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
 .navbar-right a {
-    text-decoration: none;
     font-size: 1.25rem;
-    color: var(--white);
-    font-weight: bold;
 }
-
-
-
