@@ -9,31 +9,73 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav class="topbar sticky-top">
+<nav class="topbar sticky-top" aria-label = "Navigazione principale">
     <div class="navbar-firstrow d-flex d-lg-none">
         <ul class="navbar-nav  flex-row flex-grow-1 align-items-center justify-content-around w-100 m-0 p-0">
-            <li class="d-none d-sm-block"><a href="#">Lorem</a></li>
-            <li><a href="#">Ipsum</a></li>
-            <li><a href="#">Dolor</a></li>
-            <li><a href="#">Sit</a></li>
-            <li><a class="btn btn-website btn-sm" href="#">Consecretur</a></li>
+            <li class="d-none d-sm-block"><a href="#">Edizione digitale</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Segnala</a></li>
+            <li><a href="#">Necrologie</a></li>
+            <li><a class="btn btn-website btn-sm" href="#">Abbonati</a></li>
         </ul>
     </div>
 
     <div class="navbar-secondrow d-flex align-items-center justify-content-between">
-        <div class="navbar-left">
-            <a href="#" class="hamburger d-flex flex-column justify-content-between" aria-label="Menu sezioni" title="Menu sezioni">
-                <span></span><span></span><span></span>
-            </a>
+        <div class="navbar-left d-inline-flex align-items-center">
+            <ul class = " navbar-nav navbar-left-hamburger">
+                <li>
+                    <a href="#" class="hamburger d-flex flex-column justify-content-between" aria-label="Menu sezioni" title="Menu sezioni">
+                        <span></span><span></span><span></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class = "navbar-nav navbar-site-left d-none d-lg-flex flex-row  ms-4 gap-5">
+                <li>
+                    <a href ="#">LOGO</a>
+                </li>
+                <li>
+                    <a href = "#">Edizione digitale</a>
+                </li>
+                <li>
+                    <a href = "#">Newsletter</a>
+                </li>
+                <li>
+                    <a href = "#">Segnala</a>
+                </li>
+                <li>
+                    <a href = "#">Necrologie</a>
+                </li>
+                <li>
+                    <a href = "#">Accedi</a>
+                </li>
+            </ul>
+
         </div>
 
         <div class="navbar-center flex-grow-1 text-center d-lg-none">
-            <a href="#">Lorem ipsum</a>
+            <a href="#">LOGO</a>
         </div>
 
         <div class="navbar-right">
             <ul class = "navbar-nav d-flex d-lg-none align-items-center">
-                <li><a href="#" class="user-icon" aria-label="Utente" title = "Utente">O</a>
+                <li><a href="#" class="icon-placeholder rounded-circle" aria-label="Utente" title = "Utente"></a>
+                </li>
+            </ul>
+            <ul class = "navbar-nav d-none d-lg-flex align-items-center flex-row gap-2">
+                <li>
+                    <a href="#" class="icon-placeholder rounded-circle"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-placeholder rounded-circle"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-placeholder rounded-circle"></a>
+                </li>
+                <li>
+                    <a href="#" class="icon-placeholder rounded-circle"></a>
+                </li>
+                <li>
+                    <a href = "#" class = "btn btn-website btn-sm">Abbonati</a>
                 </li>
             </ul>
         </div>

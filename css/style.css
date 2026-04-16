@@ -36,7 +36,7 @@ body {
     text-decoration: underline;
 }
 
-.navbar-firstrow .btn-website {
+.btn-website {
     background-color: var(--button-yellow);
     color: var(--black) !important;
     border: none;
@@ -45,7 +45,8 @@ body {
     transition: filter 0.2s;
 }
 
-.navbar-firstrow .btn-website:hover {
+.btn-website:hover {
+    background-color: var(--button-yellow);
     color: var(--black) !important;
     text-decoration: none;
 }
@@ -76,4 +77,23 @@ body {
 
 .navbar-right a {
     font-size: 1.25rem;
+}
+
+.navbar-site-left {
+    font-size: 0.9rem;
+}
+
+.navbar-site-left a:hover {
+    text-decoration: underline;
+}
+
+.icon-placeholder {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-placeholder:hover {
+    background-color: var(--white);
 }
