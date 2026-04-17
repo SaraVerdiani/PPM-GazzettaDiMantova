@@ -4,6 +4,7 @@
     --white: #fff;
     --button-yellow: #ffe500;
     --black: #000000;
+    --grey: #828181;
 }
 
 body {
@@ -97,3 +98,20 @@ body {
 .icon-placeholder:hover {
     background-color: var(--white);
 }
+.weather{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.weather-icon.icon-placeholder {
+    width: 35px;
+    height: 42px;
+    background-color: var(--grey);
+}
+
+.weather:hover {
+    color: var(--black);
+    opacity: 0.8;
+}
+
