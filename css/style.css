@@ -114,7 +114,7 @@ body {
     right: 60px;
     text-decoration: none;
     color: var(--black);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -133,19 +133,13 @@ body {
     position: relative;
     left:  60px;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .title img {
     width: 550px;
     min-width: 550px;
     height: auto;
-}
-
-@media (min-width: 1200px) {
-    .title img {
-        width: 650px;
-    }
 }
 
 main.container {
@@ -186,7 +180,7 @@ main.container {
 .hot-topics li {
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .hot-topics a {
@@ -210,11 +204,32 @@ main.container {
 }
 
 .hot-topics-divider {
-    margin:0;
+    width: 820px;
+    max-width: 100%;
+    border: none;
+    margin: 0.5rem auto 0;
     border-top: 1px solid var(--black);
     opacity: 1;
 }
 
+@media (min-width: 1200px) {
+    .title img {
+        width: 650px;
+    }
+    main.container {
+        max-width: 1200px;
+    }
+    .header-divider {
+        width: 1050px;
+    }
+    .break {
+        flex-basis: auto;
+    }
+
+    .hot-topics-divider {
+        width: 1050px;
+    }
+}
 
 
 
