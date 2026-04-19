@@ -101,11 +101,6 @@ body {
     background-color: var(--white);
 }
 
-.site-wrapper {
-    background-color: var(--site-background);
-    padding-bottom: 2rem;
-}
-
 .site-header {
     position: relative;
 }
@@ -142,7 +137,7 @@ body {
     height: auto;
 }
 
-main.container {
+.site-wrapper.container {
     background-color: var(--site-background);
     margin-top: 0;
     max-width: 830px;
@@ -225,7 +220,7 @@ main.container {
     .title img {
         width: 650px;
     }
-    main.container {
+    .site-wrapper.container {
         max-width: 1100px;
     }
     .header-divider {
