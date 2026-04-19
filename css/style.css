@@ -5,6 +5,8 @@
     --button-yellow: #ffe500;
     --black: #000000;
     --grey: #828181;
+    --site-background: #f7f7f7
+
 }
 
 body {
@@ -99,19 +101,26 @@ body {
     background-color: var(--white);
 }
 
+.site-wrapper {
+    background-color: var(--site-background);
+    padding-bottom: 2rem;
+}
+
 .site-header {
     position: relative;
 }
 .weather{
+    position: relative;
+    right: 60px;
     text-decoration: none;
     color: var(--black);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .weather-icon.icon-placeholder {
-    width: 35px;
-    height: 42px;
+    width: 25px;
+    height: 35px;
     background-color: var(--grey);
 }
 
@@ -119,6 +128,93 @@ body {
     color: var(--black);
     opacity: 0.8;
 }
+
+.date {
+    position: relative;
+    left:  60px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.title img {
+    width: 550px;
+    min-width: 550px;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .title img {
+        width: 650px;
+    }
+}
+
+main.container {
+    background-color: var(--site-background);
+    margin-top: 0;
+    max-width: 830px;
+    box-sizing: content-box;
+}
+
+.site-header {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.header-divider {
+    width: 820px;
+    max-width: 100%;
+    border: none;
+    margin: 0.5rem auto 0;
+    border-top: 4px solid var(--black);
+    opacity: 1;
+}
+
+.hot-topics {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.hot-topics ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hot-topics li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.hot-topics a {
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.hot-topics a:hover {
+    color: var(--black);
+    background-color: #e9ecef;
+}
+
+.break {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.hot-topics-divider {
+    margin:0;
+    border-top: 1px solid var(--black);
+    opacity: 1;
+}
+
 
 
 

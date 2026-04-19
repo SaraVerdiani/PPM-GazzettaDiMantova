@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="topbar sticky-top" aria-label = "Navigazione principale">
-    <div class="navbar-firstrow d-flex d-lg-none">
+    <div class="navbar-firstrow d-flex d-xl-none">
         <ul class="navbar-nav  flex-row flex-grow-1 align-items-center justify-content-around w-100 m-0 p-0">
             <li class="d-none d-md-block"><a href="#">Edizione digitale</a></li>
             <li><a href="#">Newsletter</a></li>
@@ -29,7 +29,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class = "navbar-nav navbar-site-left d-none d-lg-flex flex-row  ms-4 gap-5">
+            <ul class = "navbar-nav navbar-site-left d-none d-xl-flex flex-row  ms-4 gap-5">
                 <li>
                     <a href ="#">LOGO</a>
                 </li>
@@ -52,16 +52,16 @@
 
         </div>
 
-        <div class="navbar-center flex-grow-1 text-center d-lg-none">
+        <div class="navbar-center flex-grow-1 text-center d-xl-none">
             <a href="#">LOGO</a>
         </div>
 
         <div class="navbar-right">
-            <ul class = "navbar-nav d-flex d-lg-none align-items-center">
+            <ul class = "navbar-nav d-flex d-xl-none align-items-center">
                 <li><a href="#" class="icon-placeholder rounded-circle" aria-label="Utente" title = "Utente"></a>
                 </li>
             </ul>
-            <ul class = "navbar-nav d-none d-lg-flex align-items-center flex-row gap-2">
+            <ul class = "navbar-nav d-none d-xl-flex align-items-center flex-row gap-2">
                 <li>
                     <a href="#" class="icon-placeholder rounded-circle"></a>
                 </li>
@@ -81,21 +81,53 @@
         </div>
     </div>
 </nav>
-<main class = "container mt-4">
-    <header>
-        <div class="d-none d-md-flex align-items-center gap-2 justify-content-center mt-3">
+<main class = "container">
+    <header class = "site-header d-none d-md-block">
+        <div class="d-flex align-self-center gap-2 justify-content-center mt-3">
             <a class = "weather align-self-end d-flex align-items-center gap-2" href = "#">
-                <span class = "weather-icon icon-placeholder rounded-circle">
-                </span>
+                <span class = "weather-icon icon-placeholder rounded-circle"></span>
                 <span class = "weather-degrees">
-                    25°
+                    <span class="d-xl-none">25°</span>
+                    <span class="d-none d-xl-inline">Mantova: 25°C</span>
                 </span>
             </a>
             <h1 class="title mb-0">
             <span>
-                <img class="img-fluid" width="550" height="50" src="https://placehold.co/550x50/" alt="Logo">
+                <img class="flex-shrink-0" src="https://placehold.co/550x50/" alt="Logo">
             </span>
             </h1>
+            <span class = "date align-self-end d-flex align-items-center gap-2">
+                <span class = "d-xl-none"> 18/04/2026</span>
+                <span class = "d-none d-xl-inline">Sabato, 18 Aprile 2026</span>
+            </span>
+        </div>
+        <hr class="header-divider d-none d-md-block">
+        <div class = "hot-topics">
+            <ul class = "d-none d-md-flex list-unstyled justify-content-center">
+                <li role = "presentation">
+                    <a href = "#">/// CRONACA</a>
+                </li>
+                <li role = "presentation">
+                    <a href = "#">/// CULTURA</a>
+                </li>
+                <li role = "presentation">
+                    <a href = "#">/// SPETTACOLI</a>
+                </li>
+                <li role = "presentation">
+                    <a href = "#">/// CALCIO</a>
+                </li>
+                <li role = "presentation">
+                    <a href = "#">/// PODCAST</a>
+                </li>
+                <li role = "presentation">
+                    <a href = "#">/// VIDEO</a>
+                </li>
+                <li role = "presentation" class = "break">
+                    <a href = "#">/// PALLONE D'ORO</a>
+                </li>
+            </ul>
+            <hr class = "hot-topics-divider d-none d-md-block">
+
         </div>
     </header>
 
