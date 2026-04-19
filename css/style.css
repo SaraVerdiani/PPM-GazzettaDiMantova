@@ -235,6 +235,35 @@ body {
     }
 }
 
+.hot-topics-small {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+}
+
+
+.hot-topics-small::-webkit-scrollbar {
+    display: none;
+}
+
+.hot-topics-small li {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .hot-topics-small .break {
+        flex-basis: auto;
+    }
+
+    .site-wrapper.container {
+        max-width: 700px;
+    }
+}
+
 
 
 
