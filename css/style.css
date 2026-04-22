@@ -257,6 +257,10 @@ body {
     padding-right: 15px;
 }
 
+.news-box {
+    padding-bottom: 25px;
+}
+
 .news-aside {
     max-width: 280px;
     width: 100%;
@@ -397,8 +401,6 @@ body {
     background-color: var(--grey);
 }
 
-
-
 @media (min-width: 992px) {
     .title img {
         width: 650px;
@@ -485,6 +487,12 @@ body {
         padding-left: 15px;
     }
 
+    .news-strip {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+
     .news-article .article-content {
         max-width: 100%;
         flex-direction: column-reverse;
@@ -504,6 +512,11 @@ body {
 
     .widget-title {
         font-size: 1.2rem;
+    }
+
+    .news-row .news-article-vertical .article-title a {
+        font-size: 1rem;
+        line-height: 1.2;
     }
 
 }
