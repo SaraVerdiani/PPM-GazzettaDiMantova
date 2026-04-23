@@ -257,7 +257,23 @@ body {
     padding-right: 15px;
 }
 
+.news-article .article-img a {
+    display: block;
+}
+
+.news-article .article-img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+}
+
 .news-box {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 25px;
 }
 
@@ -331,6 +347,7 @@ body {
 
 .widget-header img,
 .widget-image img {
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -401,6 +418,64 @@ body {
     background-color: var(--grey);
 }
 
+.adv .article-content {
+    background-color: var(--news-strip-blue);
+    align-items: stretch;
+}
+
+.adv .subheading {
+    background-color: var(--button-yellow);
+    color: var(--white);
+}
+
+.adv .subheading::before {
+    color: var(--white);
+}
+
+.adv .article-title a{
+    color: var(--white);
+}
+
+.text-adv {
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+.widget-newslist .news-article {
+    margin-bottom:0;
+}
+
+.widget-newslist .article-title {
+    margin-top: -5px;
+}
+
+.widget-newslist .article-img {
+    flex: 0 0 35%;
+    max-width: 40%;
+}
+
+.widget-newslist .article-title a{
+    font-size: 1rem;
+}
+
+.widget-newslist .article-title h2{
+    margin-top: -7px;
+    line-height: 0.5;
+}
+
+.widget-newslist .subheading {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.widget-newslist .news-article::after {
+    content: "............................................................";
+    color: var(--topbar-darkblue);
+    display: block;
+    margin: 0 30px 0 30px;
+    overflow: hidden;
+}
+
 @media (min-width: 992px) {
     .title img {
         width: 650px;
@@ -420,8 +495,13 @@ body {
     }
 
     .news {
-        width: 100%;
+        flex: 0 0 66.5%;
+        max-width: 66.5%;
+    }
+
+    .news-aside {
         max-width: 100%;
+        flex: 1;
     }
 
 }
