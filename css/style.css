@@ -276,7 +276,7 @@ body {
     flex-direction: column;
 }
 
-.news-box {
+.news-box-aside {
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
@@ -425,6 +425,7 @@ body {
 
 .news-strip#news-strip-5 {
     background-color: var(--news-stri-grey);
+    margin-bottom: 30px;
 }
 
 #news-strip-2 .small-title::before {
@@ -454,37 +455,37 @@ body {
     font-size: 0.9rem;
 }
 
-.widget-newslist .news-article {
+.news-article-small {
     margin-bottom:0;
 }
 
-.widget-newslist .article-title {
+.news-article-small .article-title {
     flex: 1;
     margin-top: -5px;
     padding-left: 8px;
     padding-right: 8px;
 }
 
-.widget-newslist .article-img {
+.news-article-small .article-img {
     flex: 0 0 35%;
     max-width: 120px;
 }
 
-.widget-newslist .article-title a{
+.news-article-small .article-title a{
     font-size: 1rem;
 }
 
-.widget-newslist .article-title h2{
+.news-article-small .article-title h2{
     margin-top: -7px;
     line-height: 0.5;
 }
 
-.widget-newslist .subheading {
+.news-article-small .subheading {
     font-size: 0.9rem;
     line-height: 1;
 }
 
-.widget-newslist .news-article::after {
+.news-article-small::after {
     content: "............................................................";
     color: var(--topbar-darkblue);
     display: block;
