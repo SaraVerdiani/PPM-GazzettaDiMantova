@@ -10,9 +10,9 @@
 </head>
 <body>
 <nav class="topbar sticky-top" aria-label = "Navigazione principale">
-    <div class="navbar-firstrow d-flex d-lg-none">
-        <ul class="navbar-nav  flex-row flex-grow-1 align-items-center justify-content-around w-100 m-0 p-0">
-            <li class="d-none d-md-block"><a href="#">Edizione digitale</a></li>
+    <div class="navbar-firstrow">
+        <ul class="navbar-nav flex-row flex-grow-1 align-items-center justify-content-around w-100 m-0 p-0">
+            <li class="nav-1"><a href="#">Edizione digitale</a></li>
             <li><a href="#">Newsletter</a></li>
             <li><a href="#">Segnala</a></li>
             <li><a href="#">Necrologie</a></li>
@@ -20,7 +20,7 @@
         </ul>
     </div>
 
-    <div class="navbar-secondrow d-flex align-items-center justify-content-between">
+    <div class="navbar-secondrow align-items-center justify-content-between">
         <div class="navbar-left d-inline-flex align-items-center">
             <ul class = " navbar-nav navbar-left-hamburger">
                 <li>
@@ -29,7 +29,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class = "navbar-nav navbar-site-left d-none d-lg-flex flex-row  ms-4 gap-5">
+            <ul class = "navbar-nav navbar-site-left flex-row  ms-4 gap-5">
                 <li>
                     <a href ="#">LOGO</a>
                 </li>
@@ -52,16 +52,16 @@
 
         </div>
 
-        <div class="navbar-center flex-grow-1 text-center d-lg-none">
+        <div class="navbar-center flex-grow-1 text-center">
             <a href="#">LOGO</a>
         </div>
 
         <div class="navbar-right">
-            <ul class = "navbar-nav d-flex d-lg-none align-items-center">
+            <ul class = "navbar-nav-secondrow align-items-center list-unstyled m-0 p-0">
                 <li><a href="#" class="icon-placeholder rounded-circle" aria-label="Utente" title = "Utente"></a>
                 </li>
             </ul>
-            <ul class = "navbar-nav d-none d-lg-flex align-items-center flex-row gap-2">
+            <ul class = "navbar-nav align-items-center flex-row gap-2">
                 <li>
                     <a href="#" class="icon-placeholder rounded-circle"></a>
                 </li>
@@ -83,12 +83,12 @@
 </nav>
 <div class = "container site-wrapper">
     <header class = "site-header">
-        <div class="d-flex align-self-center gap-2 justify-content-center mt-0">
-            <a class = "weather align-self-end d-flex align-items-center gap-2" href = "#">
-                <span class = "weather-icon d-none d-md-block icon-placeholder rounded-circle"></span>
-                <span class = "weather-degrees d-none d-md-block">
-                    <span class="d-lg-none">25°</span>
-                    <span class="d-none d-lg-inline">Mantova: 25°C</span>
+        <div class="logo align-self-center gap-2 justify-content-center mt-0">
+            <a class = "weather align-self-end align-items-center gap-2" href = "#">
+                <span class = "weather-icon icon-placeholder rounded-circle"></span>
+                <span class = "weather-degrees">
+                    <span class="degrees">25°</span>
+                    <span class="degrees-expanded">Mantova: 25°C</span>
                 </span>
             </a>
             <h1 class="title mb-0">
@@ -96,12 +96,12 @@
                 <img class="flex-shrink-0 d-none d-md-block mt-2" src="https://placehold.co/550x50?text=Logo" alt="Logo">
             </span>
             </h1>
-            <span class = "date align-self-end d-flex align-items-center gap-2">
-                <span class = "d-none d-md-block d-lg-none"> 18/04/2026</span>
-                <span class = "d-none d-lg-inline">Sabato, 18 Aprile 2026</span>
+            <span class = "date align-self-end align-items-center gap-2">
+                <span class = "date-small"> 18/04/2026</span>
+                <span class = "date-expand">Sabato, 18 Aprile 2026</span>
             </span>
         </div>
-        <hr class="header-divider d-none d-md-block">
+        <hr class="header-divider">
         <div class = "hot-topics">
             <ul class = "hot-topics-normal d-none d-md-flex list-unstyled justify-content-center">
                 <li role = "presentation">
@@ -137,11 +137,11 @@
                     <li role="presentation" class="break"><a href="#">/// PALLONE D'ORO</a></li>
                 </ul>
             </div>
-            <hr class = "hot-topics-divider d-none d-md-block">
+            <hr class = "hot-topics-divider">
         </div>
     </header>
     <main>
-        <div class = "news-box-aside flex-lg-row">
+        <div class = "news-box-aside">
         <section class = "news">
             <h3 class = "small-title">
                 <span>Primo piano</span>
@@ -157,7 +157,7 @@
                     <div class = "article-img">
                         <a href = "#">
                             <picture>
-                                <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                 <img src="https://placehold.co/748x421?text=Article+image" alt="Descrizione dell'immagine">
                             </picture>
                         </a>
@@ -175,7 +175,7 @@
                     <div class = "article-img">
                         <a href = "#">
                             <picture>
-                                <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                 <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                             </picture>
                         </a>
@@ -193,7 +193,7 @@
                     <div class = "article-img">
                         <a href = "#">
                             <picture>
-                                <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                 <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                             </picture>
                         </a>
@@ -211,7 +211,7 @@
                     <div class = "article-img">
                         <a href = "#">
                             <picture>
-                                <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                 <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                             </picture>
                         </a>
@@ -229,7 +229,7 @@
                     <div class = "article-img">
                         <a href = "#">
                             <picture>
-                                <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                 <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                             </picture>
                         </a>
@@ -245,7 +245,7 @@
                             <h4 class = "widget-header">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x117?text=Article+header+image">
+                                        <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x117?text=Article+header+image">
                                         <img src = "https://placehold.co/1250x208?text=Article+header+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -254,7 +254,7 @@
                                 <div class = "widget-image">
                                     <a href = "#">
                                         <picture>
-                                            <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x398?text=Article+image">
+                                            <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x398?text=Article+image">
                                             <img src = "https://placehold.co/400x224?text=Article+image" alt="Descrizione dell'immagine">
                                         </picture>
                                     </a>
@@ -272,7 +272,7 @@
                             <h4 class = "widget-header">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x590?text=Article+image">
+                                        <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x590?text=Article+image">
                                         <img src = "https://placehold.co/300x250?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -288,7 +288,7 @@
                             <h4 class = "widget-header">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x590?text=Article+image">
+                                        <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x590?text=Article+image">
                                         <img src = "https://placehold.co/300x250?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -314,7 +314,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -336,7 +336,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -358,7 +358,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -380,7 +380,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -411,7 +411,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -433,7 +433,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -455,7 +455,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -477,7 +477,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -508,7 +508,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -530,7 +530,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -552,7 +552,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -574,7 +574,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -592,7 +592,7 @@
                 </div>
             </div>
         </section>
-        <div class = "news-box-aside flex-lg-row">
+        <div class = "news-box-aside">
             <section class = "news">
                 <article class = "news-article adv news-article-medium">
                     <div class = "article-content">
@@ -636,7 +636,7 @@
                                         <div class = "article-img">
                                             <a class = "" href = "#">
                                                 <picture>
-                                                    <source media="(max-width: 767px)" srcset="https://placehold.co/97x55?text=Article+image">
+                                                    <source media="(max-width: 828px)" srcset="https://placehold.co/97x55?text=Article+image">
                                                     <img src="https://placehold.co/115x65?text=Article+image" alt="Descrizione dell'immagine">
                                                 </picture>
                                             </a>
@@ -662,7 +662,7 @@
                                         <div class = "article-img">
                                             <a class = "" href = "#">
                                                 <picture>
-                                                    <source media="(max-width: 767px)" srcset="https://placehold.co/97x55?text=Article+image">
+                                                    <source media="(max-width: 828px)" srcset="https://placehold.co/97x55?text=Article+image">
                                                     <img src="https://placehold.co/115x65?text=Article+image" alt="Descrizione dell'immagine">
                                                 </picture>
                                             </a>
@@ -688,7 +688,7 @@
                                         <div class = "article-img">
                                             <a class = "" href = "#">
                                                 <picture>
-                                                    <source media="(max-width: 767px)" srcset="https://placehold.co/97x55?text=Article+image">
+                                                    <source media="(max-width: 828px)" srcset="https://placehold.co/97x55?text=Article+image">
                                                     <img src="https://placehold.co/115x65?text=Article+image" alt="Descrizione dell'immagine">
                                                 </picture>
                                             </a>
@@ -701,7 +701,7 @@
                 </div>
             </aside>
         </div>
-        <div class = "news-box-aside flex-lg-row">
+        <div class = "news-box-aside">
             <section class = "news">
                 <h3 class = "small-title">
                     <span>Primo piano</span>
@@ -717,7 +717,7 @@
                         <div class = "article-img">
                             <a href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                     <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
@@ -735,7 +735,7 @@
                         <div class = "article-img">
                             <a href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                     <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
@@ -753,7 +753,7 @@
                         <div class = "article-img">
                             <a href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                     <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
@@ -771,7 +771,7 @@
                         <div class = "article-img">
                             <a href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/576x324?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/576x324?text=Article+image">
                                     <img src="https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
@@ -787,7 +787,7 @@
                                 <h4 class = "widget-header">
                                     <a href = "#">
                                         <picture>
-                                            <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x117?text=Article+header+image">
+                                            <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x117?text=Article+header+image">
                                             <img src = "https://placehold.co/1250x208?text=Article+header+image" alt="Descrizione dell'immagine">
                                         </picture>
                                     </a>
@@ -796,7 +796,7 @@
                                     <div class = "widget-image">
                                         <a href = "#">
                                             <picture>
-                                                <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x398?text=Article+image">
+                                                <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x398?text=Article+image">
                                                 <img src = "https://placehold.co/400x224?text=Article+image" alt="Descrizione dell'immagine">
                                             </picture>
                                         </a>
@@ -814,7 +814,7 @@
                                 <h4 class = "widget-header">
                                     <a href = "#">
                                         <picture>
-                                            <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x590?text=Article+image">
+                                            <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x590?text=Article+image">
                                             <img src = "https://placehold.co/300x250?text=Article+image" alt="Descrizione dell'immagine">
                                         </picture>
                                     </a>
@@ -830,7 +830,7 @@
                                 <h4 class = "widget-header">
                                     <a href = "#">
                                         <picture>
-                                            <source media = "(max-width: 991px)" srcset = "https://placehold.co/708x590?text=Article+image">
+                                            <source media = "(max-width: 1109px)" srcset = "https://placehold.co/708x590?text=Article+image">
                                             <img src = "https://placehold.co/300x250?text=Article+image" alt="Descrizione dell'immagine">
                                         </picture>
                                     </a>
@@ -856,7 +856,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -878,7 +878,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -900,7 +900,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -922,7 +922,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -953,7 +953,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -975,7 +975,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -997,7 +997,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -1019,7 +1019,7 @@
                             <div class = "article-img">
                                 <a href = "#">
                                     <picture>
-                                        <source media = "(min-width: 767px) and (max-width: 992px)" srcset = "https://placehold.co/205x115?text=Article+image">
+                                        <source media = "(min-width: 828px) and (max-width: 1110px)" srcset = "https://placehold.co/205x115?text=Article+image">
                                         <img src = "https://placehold.co/261x147?text=Article+image" alt="Descrizione dell'immagine">
                                     </picture>
                                 </a>
@@ -1055,7 +1055,7 @@
                         <div class = "article-img">
                             <a class = "" href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/97x55?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/97x55?text=Article+image">
                                     <img src="https://placehold.co/115x65?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
@@ -1075,16 +1075,14 @@
                         <div class = "article-img">
                             <a class = "" href = "#">
                                 <picture>
-                                    <source media="(max-width: 767px)" srcset="https://placehold.co/97x55?text=Article+image">
+                                    <source media="(max-width: 828px)" srcset="https://placehold.co/97x55?text=Article+image">
                                     <img src="https://placehold.co/115x65?text=Article+image" alt="Descrizione dell'immagine">
                                 </picture>
                             </a>
                         </div>
                     </div>
                 </article>
-
             </section>
-
         </div>
     </main>
 </div>
