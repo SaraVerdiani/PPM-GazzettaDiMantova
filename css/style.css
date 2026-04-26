@@ -266,7 +266,7 @@ body {
     font-size: 1.5rem;
 }
 
-.small-title::before {
+.glyph::before {
     content: "";
     display: inline-block;
     width: 15px;
@@ -345,7 +345,7 @@ body {
 }
 
 .news-article-medium .article-title h2 {
-    line-height: 0.5;
+    line-height: 0.7;
 }
 
 .article-title a {
@@ -597,6 +597,15 @@ body {
     border-radius: 50%;
     margin-right: 8px;
 
+}
+
+#widget-14 .small-title a{
+    color: var(--topbar-lightblue);
+    text-decoration: none;
+}
+
+#widget-14 .small-title a:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 1110px) {
