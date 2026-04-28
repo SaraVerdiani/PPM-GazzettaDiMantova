@@ -420,7 +420,7 @@ body {
 #news-strip-8 .news-article-vertical .subheading,
 #news-strip-9 .news-article-vertical .subheading,
 #news-strip-10 .news-article-vertical .subheading {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 .news-article-vertical .article-title {
@@ -774,6 +774,16 @@ body {
         padding: 10px 14px;
     }
 
+    #widget-15 .subheading {
+        font-size: 1.2rem;
+    }
+
+    #news-strip-8 .news-article-vertical .subheading,
+    #news-strip-9 .news-article-vertical .subheading,
+    #news-strip-10 .news-article-vertical .subheading {
+        margin-top: 12px;
+    }
+
 
 }
 
@@ -821,7 +831,8 @@ body {
     }
 
     .news-article-vertical .subheading {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
     .news-article-small .article-title a{
@@ -866,18 +877,82 @@ body {
         margin-left: 10px;
     }
 
-}
+    .news-strip .news-article .article-title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-@media (max-width: 406px) {
     .news-strip .news-article .article-title a{
         font-size: 0.9rem;
-        line-height: 0.7;
+        line-height: 1;
     }
 
-    .news-strip .news-article .subheading {
+    .news-strip .subheading {
+        margin-bottom: 10px;
         font-size: 0.9rem;
     }
+
+
 }
+
+@media (max-width: 487px) {
+    .news-strip .news-article .article-title {
+        padding: 10px 8px;
+    }
+    .news-strip .news-article .article-title a{
+        font-size: 0.85rem;
+        line-height: 0.9;
+    }
+
+    .news-strip .news-article-vertical .subheading {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .category-badge {
+        padding: 7px 8px;
+        font-size: 0.8rem;
+    }
+
+    .category-badge span {
+        font-size: 0.6rem;
+    }
+
+
+    #news-strip-8 .news-article-vertical .subheading,
+    #news-strip-9 .news-article-vertical .subheading,
+    #news-strip-10 .news-article-vertical .subheading {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 458px) {
+    .news-strip .news-article .article-title a{
+        font-size: 0.7rem;
+        line-height: 0.5;
+    }
+
+    .news-strip .news-article-vertical .subheading {
+        font-size: 0.7rem;
+        margin-bottom: 2px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .news-strip .news-article .article-title a{
+        font-size: 0.55rem;
+        line-height: 0;
+    }
+
+    .news-strip .news-article-vertical .subheading {
+        font-size: 0.5rem;
+        margin-bottom: 0;
+    }
+
+}
+
+
 
 
 
