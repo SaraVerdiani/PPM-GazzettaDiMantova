@@ -677,6 +677,66 @@ body {
     text-decoration: underline;
 }
 
+.bottom-container {
+    margin-bottom: 30px;
+}
+
+.home-bottom {
+    margin-top: 30px;
+}
+
+.books, .books-newspaper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.books-container {
+    background-color: var(--white);
+    padding: 16px 16px 0 16px;
+    flex-grow: 1;
+}
+
+.books-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-container .small-title a{
+    color: var(--topbar-lightblue);
+    text-decoration: none;
+}
+
+
+.bottom-container .small-title a:hover {
+    text-decoration: underline;
+}
+
+.books h5{
+    font-weight: bold;
+}
+
+.books .btn {
+    background-color: var(--topbar-lightblue);
+}
+
+.books-content .article-img img{
+    max-width: 100%;
+}
+
+.books-newspaper .books-container {
+    background-color: var(--topbar-lightblue);
+}
+
+.books-newspaper .btn {
+    background-color: var(--white);
+}
+
+
+
+
 @media (min-width: 1110px) {
     .site-wrapper.container {
         max-width: 1110px;
