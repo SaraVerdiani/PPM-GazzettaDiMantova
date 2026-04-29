@@ -63,6 +63,12 @@ a:hover {
     font-size: 0.85rem;
 }
 
+.header {
+    display: flex;
+    padding-bottom: 8px;
+    border-bottom: 5px solid var(--black);
+}
+
 .btn-website {
     background-color: var(--button-yellow);
     color: var(--black) !important;
@@ -124,12 +130,7 @@ a:hover {
     position: relative;
 }
 
-.logo {
-    display: flex;
-}
-
 .weather{
-    position: relative;
     right: 60px;
     text-decoration: none;
     color: var(--black);
@@ -156,7 +157,6 @@ a:hover {
 
 .date {
     display: flex;
-    position: relative;
     left:  60px;
     font-weight: bold;
     font-size: 0.8rem;
@@ -174,19 +174,18 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-.header-divider {
-    width: 820px;
-    max-width: 100%;
-    border: none;
-    margin: 0.5rem auto 0;
-    border-top: 4px solid var(--black);
-    opacity: 1;
+.glyph-slash::before {
+    content: "///";
+    color: var(--topbar-lightblue);
+    font-weight: bold;
 }
 
 .hot-topics {
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-bottom: 15px;
+    border-bottom: 1px solid var(--black);
 }
 
 .hot-topics ul {
@@ -215,6 +214,7 @@ a:hover {
 .hot-topics a:hover {
     color: var(--white);
     background-color: var(--grey);
+    text-decoration: none;
 }
 
 .break {
@@ -950,7 +950,7 @@ a:hover {
         padding-left: 15px;
     }
 
-    .logo,
+    .header,
     .header-divider,
     .nav-1 {
         display: none;
