@@ -25,6 +25,11 @@ body {
     background-color: var(--white);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .topbar {
     z-index: 1000;
 }
@@ -189,7 +194,6 @@ a:hover {
 }
 
 .hot-topics ul {
-    list-style-type: none;
     padding-left: 0;
     margin: 0;
     justify-content: center;
@@ -217,6 +221,14 @@ a:hover {
     text-decoration: none;
 }
 
+.dots {
+    border-left: 2px dotted var(--white);
+}
+
+.dots a {
+    margin-left: 15px;
+}
+
 .break {
     flex-basis: 100%;
     text-align: center;
@@ -230,15 +242,6 @@ a:hover {
 .hot-topics a.button:hover {
     background-color: var(--white);
     color: var(--red);
-}
-
-.hot-topics-divider {
-    width: 820px;
-    max-width: 100%;
-    border: none;
-    margin: 0.5rem auto 0;
-    border-top: 1px solid var(--black);
-    opacity: 1;
 }
 
 .hot-topics-small {
@@ -272,7 +275,7 @@ a:hover {
     padding-right: 15px;
 }
 
-.news-article .article-img a {
+.news-article .article-img a{
     display: block;
 }
 
@@ -290,7 +293,10 @@ a:hover {
     display: flex;
     flex-direction: row;
     padding-bottom: 25px;
+}
 
+.box-separator {
+    border-top: 2px dotted var(--black);
 }
 
 .news-aside {
@@ -451,12 +457,6 @@ a:hover {
 
 .news-article-vertical .article-title h2{
     line-height: 0.5;
-}
-
-.subheading::before {
-    content: "///";
-    color: var(--topbar-lightblue);
-    font-weight: bold;
 }
 
 .news-strip#news-strip-2,
@@ -800,7 +800,8 @@ a:hover {
 
     .navbar-site-left,
     .navbar-right .navbar-nav,
-    .degrees-expanded, .date-expand {
+    .degrees-expanded, .date-expand,
+    .dots {
         display: none;
     }
 
@@ -878,10 +879,6 @@ a:hover {
     .widget-newslist .article-title a{
         font-size: 1.1rem;
         line-height: 1;
-    }
-
-    .widget-newslist .news-article::after {
-        content: "................................................................................................................................";
     }
 
     .news .row > .col-lg-4 {
@@ -964,6 +961,7 @@ a:hover {
     .news-article-medium .article-content {
         flex-direction: column-reverse;
         max-width: 100%;
+        align-items: stretch;
     }
 
     .news-article .article-title {
