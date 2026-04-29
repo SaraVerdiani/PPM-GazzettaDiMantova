@@ -45,6 +45,9 @@ body {
 .navbar-firstrow { background-color: var(--topbar-darkblue); }
 .navbar-secondrow { background-color: var(--topbar-lightblue); }
 
+ul {
+    list-style: none;
+}
 
 a {
     text-decoration: none;
@@ -698,6 +701,51 @@ a:hover {
 
 .books-newspaper .btn {
     background-color: var(--white);
+}
+
+.site-footer {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-top: 5px solid var(--black);
+    border-bottom: 2px dotted var(--black);
+}
+
+.footer-nav {
+    margin-bottom: 0;
+}
+
+.footer-nav a{
+    color: var(--topbar-lightblue);
+    font-size: 1.2rem;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-nav .icon-placeholder {
+    background-color: var(--topbar-lightblue);
+    margin-left: 10px;
+}
+
+.footer-nav .btn {
+    background-color: var(--topbar-lightblue);
+    border: none;
+}
+
+.footer-group-assets {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.info {
+    font-size: 0.8rem;
 }
 
 @media (min-width: 1110px) {
