@@ -524,7 +524,7 @@ a:hover {
     line-height: 1;
 }
 
-.news-article-small::after {
+.widget-newslist .news-article-small::after {
     content: "";
     display: block;
     margin: 10px 30px 10px 30px;
@@ -837,7 +837,6 @@ a:hover {
     .news .row > .col-lg-4 {
         flex: 0 0 100%;
         max-width: 100%;
-        margin-top: 1.5rem;
     }
 
     .category-badge {
