@@ -987,6 +987,12 @@ a:hover {
         font-size: 1rem;
     }
 
+    .site-footer .footer-links ul {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 575px) {
